@@ -83,19 +83,29 @@
 
             <div class="header__actions">
 
-                <button
-                    class="theme-switch"
-                    type="button"
-                    aria-label="Switch color theme"
-                >
-                    <span class="theme-switch__item">
+                <label class="theme-switch">
+
+                    <input
+                        class="theme-switch__input"
+                        type="checkbox"
+                        aria-label="Switch color theme"
+                    >
+
+                    <span class="theme-switch__icon theme-switch__icon--sun">
                         <img
-                            class="theme-switch__img theme-switch__img--light"
-                            src="images/Theme_switch.svg"
+                            src="images/Sun.svg"
                             alt=""
                         >
                     </span>
-                </button>
+
+                    <span class="theme-switch__icon theme-switch__icon--moon">
+                        <img
+                            src="images/Moon.svg"
+                            alt=""
+                        >
+                    </span>
+
+                </label>
 
                 <a
                     class="menu-link"
