@@ -83,8 +83,21 @@ a {
 	display: flex;
     align-items: center;
     padding: 2px;
+
     background-color: transparent;
+    border: none;
     cursor: pointer;
+}
+
+.theme-switch__item {
+    display: flex;
+}
+
+.theme-switch__item img {
+    display: block;
+
+    width: 44px;
+    height: 22px;
 }
 
 
