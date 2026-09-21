@@ -18,13 +18,17 @@
 
 	<header class="header">
 
-		<div class="container">
+		<div class="container header__container">
 
 			<a
 				class="logo"
 				href="index.html"
 			>
-				Coffee House
+				<img
+					class="logo__image"
+					src="images/logo.svg"
+					alt="Coffee House"
+				>
 			</a>
 
 			<nav class="navigation">
@@ -34,9 +38,9 @@
 					<li class="navigation__item">
 						<a
 							class="navigation__link"
-							href="index.html"
+							href="#favorite"
 						>
-							Home
+							Favorite coffee
 						</a>
 					</li>
 
@@ -52,30 +56,57 @@
 					<li class="navigation__item">
 						<a
 							class="navigation__link"
-							href="menu.html"
+							href="#mobile"
 						>
-							Menu
+							Mobile app
 						</a>
 					</li>
+
+					<li class="navigation__item">
+            			<a
+                			class="navigation__link"
+                			href="#contact"
+            			>
+                			Contact us
+            			</a>
+        			</li>
 
 				</ul>
 
 			</nav>
 
-			<button
-				class="theme-toggle"
-				type="button"
-			>
-				☀
-			</button>
+			<div class="header__actions">
+				<button
+					class="theme-switch"
+					type="button"
+					aria-label="Switch color theme"
+				>
+					<span class="theme-switch__item">
+                    	<img
+            				src="images/Theme switch.svg"
+            				alt=""
+        				>
+                	</span>
+				</button>
 
-			<button
-				class="burger"
-				type="button"
-				aria-label="Open navigation menu"
-			>
-				☰
-			</button>
+				<a
+                	class="menu-link"
+                	href="menu.html"
+            	>
+                	<span class="menu-link__text">
+						Menu
+					</span>
+
+            	</a>
+
+				<button
+					class="burger"
+					type="button"
+					aria-label="Open navigation menu"
+				>
+					☰
+				</button>
+			</div>
 
 		</div>
 
@@ -83,11 +114,36 @@
 
     <main>
 
-        <section>
-			<h1>
-                Enjoy our delicious coffee
-            </h1>
-        </section>
+		<section class="hero">
+
+			<div class="container hero__container">
+
+				<div class="hero__content">
+
+					<h1 class="hero__title">
+						<span>Enjoy</span> premium coffee
+						at our charming cafe
+					</h1>
+
+					<p class="hero__description">
+						With its inviting atmosphere and delicious coffee options, the Coffee
+						House Resource is a popular destination for coffee lovers and those
+						seeking a warm and inviting space to enjoy their favorite beverage.
+					</p>
+
+					<a
+						class="button button--primary"
+						href="menu.html"
+					>
+						Menu
+					</a>
+
+				</div>
+
+			</div>
+
+		</section>
+
 
         <section>
 			<h2>
