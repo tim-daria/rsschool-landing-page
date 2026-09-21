@@ -213,7 +213,8 @@ a {
 }
 
 .hero__title span,
-.favorite__title span {
+.favorite__title span,
+.about__title span {
     color: var(--color-text-accent);
     font-style: italic;
 }
@@ -266,7 +267,8 @@ a {
     background-color: #ffffff;
 }
 
-.favorite {
+.favorite,
+.about {
     padding-top: 100px;
 }
 
@@ -353,3 +355,39 @@ a {
 .slider__indicator--active {
     background: #000;
 }
+
+.about__title {
+    margin: 0 0 40px;
+
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.about__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about__gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about__image--large {
+    height: 500px;
+}
+
+.about__image--small {
+    height: 400px;
+}
+
