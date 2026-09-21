@@ -40,9 +40,17 @@ body {
 	color: var(--color-text-primary);
     background-color: var(--color-background);
 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
+}
+
+main {
+    flex: 1;
 }
 
 .container {
@@ -95,53 +103,6 @@ a {
 .navigation__link:hover {
     color: var(--color-text-accent);
 }
-
-/* .theme-switch {
-	display: flex;
-    align-items: center;
-    padding: 2px;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-} */
-
-/* .theme-switch {
-    display: flex;
-    align-items: center;
-
-    width: 88px;
-    height: 44px;
-
-    border: 1px solid var(--color-border-inverse);
-    border-radius: 22px;
-
-    padding: 4px;
-
-    cursor: pointer;
-}
-
-.theme-switch__input {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.theme-switch__icon {
-    width: 36px;
-    height: 36px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-}
-
-.theme-switch__icon img {
-    width: 20px;
-    height: 20px;
-} */
 
 .theme-switch {
     display: flex;
@@ -213,12 +174,7 @@ a {
 
 .theme-switch:has(.theme-switch__input:checked):hover
 .theme-switch__icon--sun {
-    background-color: var(--color-text-accent);
-}
-
-.theme-switch:has(.theme-switch__input:checked):hover
-.theme-switch__icon--sun {
-    filter: brightness(0);
+    background-color: var(--color-container);
 }
 
 .theme-switch:hover,
