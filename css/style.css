@@ -215,7 +215,8 @@ a {
 .hero__title span,
 .favorite__title span,
 .about__title span,
-.mobile__title span {
+.mobile__title span,
+.footer__title span  {
     color: var(--color-text-accent);
     font-style: italic;
 }
@@ -455,4 +456,72 @@ a {
 
 .mobile__button-label {
     font-size: 10px;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 60px 40px;
+
+    background-color:var(--color-container);
+    color: var(--color-text-inverse);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer__title {
+    margin: 0 0 40px;
+
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.footer__social-link img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.footer__contact {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.footer__contact:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.footer__social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__social-button {
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.footer__social-button:hover {
+    background-color: var(--color-background);
+}
+
+.footer__social-button:hover img {
+    filter: brightness(0);
 }
