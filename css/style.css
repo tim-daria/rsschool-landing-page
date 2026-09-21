@@ -9,7 +9,8 @@
     --color-background: #e1d4c9;
     --color-container: #665f55;
 
-    --color-border: #c1b6ad;
+    --color-border-primary: #c1b6ad;
+	--color-border-inverse: #665f55;
 }
 
 * {
@@ -26,6 +27,10 @@ body {
 	font-family: "Inter", sans-serif;
 	color: var(--color-text-primary);
     background-color: var(--color-background);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .container {
@@ -93,7 +98,7 @@ a {
     display: flex;
 }
 
-.theme-switch__item img {
+.theme-switch__img {
     display: block;
 
     width: 44px;
@@ -132,7 +137,7 @@ a {
 
 .menu-link:hover .menu-link__text {
     text-decoration: underline;
-	text-underline-offset: 4px;
+    text-underline-offset: 4px;
 }
 
 @media (max-width: 768px) {
@@ -202,12 +207,13 @@ a {
 .hero__title {
     margin: 0 0 40px;
 
-    font-size: 60px;
+    font-size: 72px;
     line-height: 1.05;
     font-weight: 600;
 }
 
-.hero__title span {
+.hero__title span,
+.favorite__title span {
     color: var(--color-text-accent);
     font-style: italic;
 }
@@ -258,4 +264,92 @@ a {
 
 .button--primary:hover {
     background-color: #ffffff;
+}
+
+.favorite {
+    padding-top: 100px;
+}
+
+.favorite__title {
+    margin: 0 0 40px;
+
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 600;
+	text-align: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__window {
+	width: 480px;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+}
+
+.slider__button {
+    width: 60px;
+    height: 60px;
+
+	border: 1px solid #665f55;
+    border-radius: 50%;
+
+    background: transparent;
+
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.slider__button:hover {
+    background: #665f55;
+    color: white;
+}
+
+.coffee-card {
+    width: 480px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.coffee-card__title,
+.coffee-card__price {
+    font-weight: 600;
+}
+
+.slider__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.slider__indicator {
+    width: 40px;
+    height: 4px;
+
+    padding: 0;
+    border: none;
+
+    background: #999;
+
+    cursor: pointer;
+}
+
+.slider__indicator--active {
+    background: #000;
 }

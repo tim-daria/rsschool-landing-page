@@ -22,202 +22,312 @@
 
 <body>
 
-	<header class="header">
+    <header class="header">
 
-		<div class="container header__container">
+        <div class="container header__container">
 
-			<a
-				class="logo"
-				href="index.html"
-			>
-				<img
-					class="logo__image"
-					src="images/logo.svg"
-					alt="Coffee House"
-				>
-			</a>
+            <a
+                class="logo"
+                href="index.html"
+            >
+                <img
+                    class="logo__image"
+                    src="images/logo.svg"
+                    alt="Coffee House"
+                >
+            </a>
 
-			<nav class="navigation">
+            <nav class="navigation">
 
-				<ul class="navigation__list">
+                <ul class="navigation__list">
 
-					<li class="navigation__item">
-						<a
-							class="navigation__link"
-							href="#favorite"
-						>
-							Favorite coffee
-						</a>
-					</li>
+                    <li class="navigation__item">
+                        <a
+                            class="navigation__link"
+                            href="#favorite"
+                        >
+                            Favorite coffee
+                        </a>
+                    </li>
 
-					<li class="navigation__item">
-						<a
-							class="navigation__link"
-							href="#about"
-						>
-							About
-						</a>
-					</li>
+                    <li class="navigation__item">
+                        <a
+                            class="navigation__link"
+                            href="#about"
+                        >
+                            About
+                        </a>
+                    </li>
 
-					<li class="navigation__item">
-						<a
-							class="navigation__link"
-							href="#mobile"
-						>
-							Mobile app
-						</a>
-					</li>
+                    <li class="navigation__item">
+                        <a
+                            class="navigation__link"
+                            href="#mobile"
+                        >
+                            Mobile app
+                        </a>
+                    </li>
 
-					<li class="navigation__item">
-            			<a
-                			class="navigation__link"
-                			href="#contact"
-            			>
-                			Contact us
-            			</a>
-        			</li>
+                    <li class="navigation__item">
+                        <a
+                            class="navigation__link"
+                            href="#contact"
+                        >
+                            Contact us
+                        </a>
+                    </li>
 
-				</ul>
+                </ul>
 
-			</nav>
+            </nav>
 
-			<div class="header__actions">
-				<button
-					class="theme-switch"
-					type="button"
-					aria-label="Switch color theme"
-				>
-					<span class="theme-switch__item">
-                    	<img
-            				src="images/Theme switch.svg"
-            				alt=""
-        				>
-                	</span>
-				</button>
+            <div class="header__actions">
 
-				<a
-                	class="menu-link"
-                	href="menu.html"
-            	>
-                	<span class="menu-link__text">
-						Menu
-					</span>
+                <button
+                    class="theme-switch"
+                    type="button"
+                    aria-label="Switch color theme"
+                >
+                    <span class="theme-switch__item">
+                        <img
+                            class="theme-switch__img theme-switch__img--light"
+                            src="images/Theme switch.svg"
+                            alt=""
+                        >
+                    </span>
+                </button>
 
-            	</a>
+                <a
+                    class="menu-link"
+                    href="menu.html"
+                >
+                    <span class="menu-link__text">
+                        Menu
+                    </span>
+                </a>
 
-				<button
-					class="burger"
-					type="button"
-					aria-label="Open navigation menu"
-				>
-					☰
-				</button>
-			</div>
+                <button
+                    class="burger"
+                    type="button"
+                    aria-label="Open navigation menu"
+                >
+                    ☰
+                </button>
 
-		</div>
+            </div>
 
-	</header>
+        </div>
+
+    </header>
 
     <main>
 
-		<section class="hero">
+        <section class="hero">
 
-			<div class="container hero__container">
+            <div class="container hero__container">
 
-				<div class="hero__content">
+                <div class="hero__content">
 
-					<h1 class="hero__title">
-						<span>Enjoy</span> premium coffee
-						at our charming cafe
-					</h1>
+                    <h1 class="hero__title">
+                        <span>Enjoy</span> premium coffee
+                        at our charming cafe
+                    </h1>
 
-					<p class="hero__description">
-						With its inviting atmosphere and delicious coffee options, the Coffee
-						House Resource is a popular destination for coffee lovers and those
-						seeking a warm and inviting space to enjoy their favorite beverage.
-					</p>
+                    <p class="hero__description">
+                        With its inviting atmosphere and delicious coffee options, the Coffee
+                        House Resource is a popular destination for coffee lovers and those
+                        seeking a warm and inviting space to enjoy their favorite beverage.
+                    </p>
 
-					<a
-						class="button button--primary"
-						href="menu.html"
+                    <a
+                        class="button button--primary"
+                        href="menu.html"
+                    >
+                        Menu
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="favorite" id="favorite">
+			<div class="container">
+
+            	<h2 class="favorite__title">
+                	Choose your <span>favorite</span> coffee
+            	</h2>
+
+				<div class="slider">
+
+					<button
+						class="slider__button slider__button--prev"
+						type="button"
+						aria-label="Previous coffee"
 					>
-						Menu
-					</a>
+						←
+					</button>
+
+					<div class="slider__window">
+						<div class="slider__track">
+
+							<article class="coffee-card">
+								<img
+									class="coffee-card__image"
+									src="images/coffee-slider-1.png"
+									alt="Frappuccino"
+								>
+
+								<h3 class="coffee-card__title">
+									S’mores Frappuccino
+								</h3>
+
+								<p class="coffee-card__description">
+									This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.
+								</p>
+
+								<p class="coffee-card__price">
+									$5.50
+								</p>
+							</article>
+
+							<article class="coffee-card">
+								<img
+									class="coffee-card__image"
+									src="images/coffee-slider-2.png"
+									alt="Macchiato"
+								>
+
+								<h3 class="coffee-card__title">
+									Caramel Macchiato
+								</h3>
+
+								<p class="coffee-card__description">
+									Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.
+								</p>
+
+								<p class="coffee-card__price">
+									$5.00
+								</p>
+							</article>
+
+							<article class="coffee-card">
+								<img
+									class="coffee-card__image"
+									src="images/coffee-slider-3.png"
+									alt="Ice coffee"
+								>
+
+								<h3 class="coffee-card__title">
+									Ice coffee
+								</h3>
+
+								<p class="coffee-card__description">
+									A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+								</p>
+
+								<p class="coffee-card__price">
+									$4.50
+								</p>
+							</article>
+
+						</div>
+					</div>
+
+					<button
+						class="slider__button slider__button--next"
+						type="button"
+						aria-label="Next coffee"
+					>
+						→
+					</button>
+				</div>
+				<div class="slider__controls">
+
+					<button
+						class="slider__indicator slider__indicator--active"
+						type="button"
+						aria-label="Slide 1"
+					></button>
+
+					<button
+						class="slider__indicator"
+						type="button"
+						aria-label="Slide 2"
+					></button>
+
+					<button
+						class="slider__indicator"
+						type="button"
+						aria-label="Slide 3"
+					></button>
 
 				</div>
-
-			</div>
-
-		</section>
-
-
-        <section id="favorite">
-			<h2>
-				Favorite Coffee
-			</h2>
+        	</div>
         </section>
 
         <section id="about">
-			<h2>
-				About Us
-			</h2>
+            <h2>
+                About Us
+            </h2>
         </section>
 
         <section>
-			<h2>
-				Testimonials
-			</h2>
+            <h2>
+                Testimonials
+            </h2>
         </section>
 
     </main>
 
-	<footer class="footer" id="contact">
+    <footer class="footer" id="contact">
 
-		<div class="container">
+        <div class="container">
 
-			<div class="footer__content">
+            <div class="footer__content">
 
-				<div class="footer__contacts">
+                <div class="footer__contacts">
 
-					<h2>
-						Contact us
-					</h2>
+                    <h2>
+                        Contact us
+                    </h2>
 
-					<a href="tel:+49123456789">
-						+49 123 456789
-					</a>
+                    <a href="tel:+49123456789">
+                        +49 123 456789
+                    </a>
 
-					<a href="mailto:hello@coffeehouse.com">
-						hello@coffeehouse.com
-					</a>
+                    <a href="mailto:hello@coffeehouse.com">
+                        hello@coffeehouse.com
+                    </a>
 
-				</div>
+                </div>
 
-				<div class="footer__social">
+                <div class="footer__social">
 
-					<h2>
-						Follow us
-					</h2>
+                    <h2>
+                        Follow us
+                    </h2>
 
-					<a
-						href="https://github.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						GitHub
-					</a>
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-			<p class="footer__copyright">
-				© 2026 Coffee House
-			</p>
+            <p class="footer__copyright">
+                © 2026 Coffee House
+            </p>
 
-		</div>
+        </div>
 
-	</footer>
+    </footer>
 
     <script src="js/script.js"></script>
 
