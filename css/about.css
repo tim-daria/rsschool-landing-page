@@ -1,0 +1,41 @@
+.about__title {
+    margin: 0 0 40px;
+
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.about__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about__gallery-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.about__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about__image--large {
+    aspect-ratio: 4 / 3;
+}
+
+.about__image--small {
+    aspect-ratio: 16 / 10;
+}
+
+@media (max-width: 768px) {
+    .about__gallery {
+        grid-template-columns: 1fr;
+    }
+}

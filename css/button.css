@@ -1,0 +1,32 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 120px;
+    padding: 20px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.button--primary {
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+}
+
+.button--primary:hover {
+    background-color: #ffffff;
+}

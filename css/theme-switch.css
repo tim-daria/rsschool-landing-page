@@ -1,0 +1,87 @@
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 72px;
+    height: 40px;
+
+    padding: 4px;
+
+    border: 1px solid var(--color-border-inverse);
+    border-radius: 20px;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.theme-switch__input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.theme-switch__icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.theme-switch__icon img {
+    width: 20px;
+    height: 20px;
+
+    display: block;
+}
+
+.theme-switch__icon--sun {
+    background-color: var(--color-text-accent);
+}
+
+.theme-switch__icon--moon {
+    background-color: transparent;
+}
+
+.theme-switch__input:checked ~ .theme-switch__icon--sun {
+    background-color: transparent;
+}
+
+.theme-switch__input:checked ~ .theme-switch__icon--moon {
+    background-color: var(--color-text-accent);
+}
+
+.theme-switch:not(:has(.theme-switch__input:checked)):hover
+.theme-switch__icon--moon {
+    background-color: var(--color-container);
+}
+
+.theme-switch:not(:has(.theme-switch__input:checked)):hover
+.theme-switch__icon--moon img {
+    filter: brightness(0);
+}
+
+.theme-switch:has(.theme-switch__input:checked):hover
+.theme-switch__icon--sun {
+    background-color: var(--color-container);
+}
+
+.theme-switch:hover,
+.burger:hover {
+    opacity: 0.7;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+}
