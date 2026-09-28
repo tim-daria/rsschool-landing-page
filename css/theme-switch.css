@@ -83,5 +83,16 @@
 @media (max-width: 768px) {
     .burger {
         display: block;
+
+        width: 40px;
+        height: 40px;
+
+        border: 1px solid var(--color-border-inverse);
+        border-radius: 20px;
+
+        background-color: transparent;
+
+        font-size: 20px;
     }
+
 }
