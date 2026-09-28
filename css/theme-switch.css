@@ -91,6 +91,7 @@
         border-radius: 20px;
 
         background-color: transparent;
+        /* color: var(--color-text-primary); */
 
         font-size: 20px;
     }
