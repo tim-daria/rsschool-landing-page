@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -124,6 +125,7 @@
                 <button
                     class="burger"
                     type="button"
+                    aria-controls="mobile-menu"
                     aria-label="Open navigation menu"
                 >
                     ☰
@@ -134,6 +136,54 @@
         </div>
 
     </header>
+
+    <nav
+        class="mobile-menu"
+        id="mobile-menu"
+    >
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="index.html#favorite"
+                >
+                    Favorite coffee
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="index.html#about"
+                >
+                    About
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="index.html#mobile"
+                >
+                    Mobile app
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="index.html#contact"
+                >
+                    Contact us
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="index.html"
+                >
+                    Main page
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
 
@@ -254,7 +304,8 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/theme_switch.js"></script>
+    <script src="js/burger_menu.js"></script>
 
 </body>
 
