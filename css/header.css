@@ -48,4 +48,8 @@
     .navigation {
         display: none;
     }
+
+    .header__actions {
+        margin-left: auto;
+    }
 }
