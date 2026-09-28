@@ -11,8 +11,6 @@ if (slider) {
     const total = slides.length;
     let current = 0;
 
-    // Slides are always the same width as the slider window,
-    // so the offset for slide N is N * card width in px.
     const applyPosition = (animate) => {
         const cardWidth = slides[0].getBoundingClientRect().width;
 
@@ -20,8 +18,6 @@ if (slider) {
         track.style.transform = `translateX(-${current * cardWidth}px)`;
 
         if (!animate) {
-            // Re-enable the transition after this frame so the
-            // next slide change animates again
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     track.classList.remove('no-transition');
@@ -31,8 +27,6 @@ if (slider) {
     };
 
     const goTo = (index, animate = true) => {
-        // Cyclic: (index % total + total) % total wraps
-        // 1 -> total and total+1 -> 1
         current = (index % total + total) % total;
 
         applyPosition(animate);
@@ -57,8 +51,6 @@ if (slider) {
         indicator.addEventListener('click', () => goTo(i));
     });
 
-    // Keep the position exact after any window resize
-    // (card width changes on mobile), without animating
     window.addEventListener('resize', () => goTo(current, false));
 
     goTo(current);
