@@ -20,6 +20,11 @@
 
 .slider__track {
     display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider__track.no-transition {
+    transition: none;
 }
 
 .slider__button {
@@ -45,6 +50,12 @@
 .slider__button:hover {
     background: var(--color-container);
     color: white;
+}
+
+.slider__button:focus-visible,
+.slider__indicator:focus-visible {
+    outline: 2px solid var(--color-border-inverse);
+    outline-offset: 2px;
 }
 
 .coffee-card {
@@ -79,13 +90,13 @@
     padding: 0;
     border: none;
 
-    background: #999;
+    background: var(--color-border-primary);
 
     cursor: pointer;
 }
 
 .slider__indicator--active {
-    background: #000;
+    background: var(--color-text-primary);
 }
 
 @media (max-width: 768px) {
