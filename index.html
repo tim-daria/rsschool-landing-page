@@ -17,7 +17,17 @@
         type="image/svg+xml"
     >
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/theme-switch.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/favorite.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -119,6 +129,7 @@
                 <button
                     class="burger"
                     type="button"
+                    aria-controls="mobile-menu"
                     aria-label="Open navigation menu"
                 >
                     ☰
@@ -129,6 +140,54 @@
         </div>
 
     </header>
+
+    <nav
+        class="mobile-menu"
+        id="mobile-menu"
+    >
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="#favorite"
+                >
+                    Favorite coffee
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="#about"
+                >
+                    About
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="#mobile"
+                >
+                    Mobile app
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="#contact"
+                >
+                    Contact us
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a
+                    class="mobile-menu__link"
+                    href="menu.html"
+                >
+                    Menu
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
 
@@ -186,7 +245,7 @@
 								<img
 									class="coffee-card__image"
 									src="images/coffee-slider-1.png"
-									alt="Frappuccino"
+									alt=""
 								>
 
 								<h3 class="coffee-card__title">
@@ -206,7 +265,7 @@
 								<img
 									class="coffee-card__image"
 									src="images/coffee-slider-2.png"
-									alt="Macchiato"
+									alt=""
 								>
 
 								<h3 class="coffee-card__title">
@@ -226,7 +285,7 @@
 								<img
 									class="coffee-card__image"
 									src="images/coffee-slider-3.png"
-									alt="Ice coffee"
+									alt=""
 								>
 
 								<h3 class="coffee-card__title">
@@ -294,13 +353,13 @@
 							<img
 								class="about__image about__image--large"
 								src="images/about-1.jpg"
-								alt="Coffee House interior"
+								alt=""
 							>
 
 							<img
 								class="about__image about__image--small"
 								src="images/about-2.jpg"
-								alt="Coffee House interior"
+								alt=""
 							>
 
 						</div>
@@ -310,13 +369,13 @@
 							<img
 								class="about__image about__image--small"
 								src="images/about-3.jpg"
-								alt="Coffee House atmosphere"
+								alt=""
 							>
 
 							<img
 								class="about__image about__image--large"
 								src="images/about-4.jpg"
-								alt="Coffee House atmosphere"
+								alt=""
 							>
 
 						</div>
@@ -429,7 +488,7 @@
                         >
                             <img
                                 src="images/twitter.svg"
-                                alt="Twitter icon"
+                                alt=""
                             >
                         </button>
 
@@ -440,7 +499,7 @@
                         >
                             <img
                                 src="images/instagram.svg"
-                                alt="Instagram icon"
+                                alt=""
                             >
                         </button>
 
@@ -451,7 +510,7 @@
                         >
                             <img
                                 src="images/facebook.svg"
-                                alt="Facebook icon"
+                                alt=""
                             >
                         </button>
 
@@ -494,7 +553,9 @@
 
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/theme_switch.js"></script>
+    <script src="js/burger_menu.js"></script>
+    <script src="js/slider.js"></script>
 
 </body>
 
